@@ -14,6 +14,11 @@ body {
 h2,h3{
     text-align: center;
 }
+/*remove dots from ul*/
+ul {
+  list-style-type: none;
+ }
+
 /* Link Styles */
 
 a {
@@ -241,11 +246,32 @@ CONTACT
     background: #ffffe6;
 }
 
+/*styling the #MY-PROJECTS DIV*/
+/*
+#my-projects{
+    background: orange;
+}
+*/
+#my-projects li{
+    width: 80%;
+    margin: 1% 10%;
+    padding: 2rem 4rem;
+    background: coral;
+    border-radius: 10px;
+}
+#my-projects img{
+    width: 80%;
+    height: 60%;
+    padding-bottom: 1rem;
+}
+#my-projects a{
+    display: inline-block;
+    width: 100%;
+}
 
 
 
-
-/* Styles for larger screens */
+/********************************* Styles for larger screens *************************************/
 @media screen and (min-width: 720px) {
   
    .card-contact{
@@ -293,6 +319,7 @@ CONTACT
 
 
 
+/*fixing: text p below the picture in mobile,not halh on hte right and half under*/
 
 
 
