@@ -1,23 +1,30 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>PetyaKatsarova's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
-</head>
- <body>
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <title>PetyaKatsarova's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css-master/normalize.css">
+    <link rel="stylesheet" type="text/css" href="dist/imagelightbox.min.css">  
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+    
+    <body>
+
     <div class="main-nav">
         <ul class="nav">
           <li class="name">Petya Katsarova</li>
           <li><a href="#home">About me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li  class="chit-chat"><a href="#values" >Values</a></li>
         </ul>
     </div>
-    <header>
+    <header id="values">
       <img src="images/petya.jpg" alt="Picture of Petya Katsarova" class="profile-image">
       <h1 class="tag name">Hello, I’m Petya.</h1>
       <p class="tag location">You can find me in Dubai, UAE or somewhere around the world, travelling.</p>
@@ -41,23 +48,47 @@
           I will, as well learn much more about internet, coding and how this all works.</p>
       </div>
      </main>   
-<!--        ************** EXPERIENCE***********-->
-     <main id="experience" >
-      <div id="my-projects">
-        <p>My projects: </p>
-        <ul>
-          <li><img src="images/link1.jpg" alt="fred flinstone struggling" ><a href="https://petyadeveloper.github.io/project-2/" target="_blank">My first steps in coding: almost getting what CSS and HTML are about</a></li> 
-          <li><img src="images/link2.png" alt="fred flinstone happy" ><a href="https://petyadeveloper.github.io/project-3/" target="_blank">Learning building Forms was easy</a></li>
-          <li><img src="images/link3.png" alt="fred flinstone thinking" ><a href="https://petyadeveloper.github.io/project-4/" target="_blank">This project made me sweat: first steps in javaScript and using a plag-in</a></li>
-<!--          <li><a href="https://petyadeveloper.github.io/project-5/" target="_blank">Built the styling with SASS</a></li>-->
-          <li><img src="images/link4.png" alt="baby girl finstone happy" ><a href="https://petyadeveloper.github.io/project-7/" target="_blank">I can write the javaScript for this game in 20 min...but I had to repeat writing the code many times before that.</a></li>
-          <li><a href="https://petyadeveloper.github.io/project-8/" target="_blank">Using SVG animation</a></li>
-          <li><a href="https://petyadeveloper.github.io/project-9/" target="_blank">Dashboard site with lots of features</a></li>
-          <li><a href="https://petyadeveloper.github.io/project-10/" target="_blank">Using js ajax request for collecting and displaying data.</a></li>
-        </ul>
-       <div>
-     </main>
-<!--     ************** CONTACT-->
+      
+<!--        <input type="text" id="myInput"  name="searchPictures" onkeyup="myFunction()" value="" placeholder="Search" required>-->
+    <div id="experience"><h2>Experience</h2></div>
+    <div class = "container">
+        
+      <ul id="myUL" class="bu">    
+             
+<!--         <li><a  href="photos/01.jpg" data-imagelightbox="demo" data-ilb2-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="photos/thumbnails/01.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields."/></a></li>   -->
+
+        <li><a href="images/link1.jpg" data-imagelightbox="demo" data-ilb2-caption="In this project I have built the CSS using
+            mobile first approach and 2 breakpoints for display on larger screens."><img src="images/link1.jpg" alt="fred flinstone struggling"/>
+            <a href="https://petyadeveloper.github.io/project-2/" target="_blank">My first steps in coding: almost getting what CSS and HTML are about</a>
+         </a></li>
+        <li><a href="images/link2.png" data-imagelightbox="demo" data-ilb2-caption="In this project I have built a simple form containing different input and button elements and wrote the css to style it."><img src="images/link2.png" alt="Fred Flinstone happy" class="popup"/>
+        <a href="https://petyadeveloper.github.io/project-3/" target="_blank">Learning building Forms was easy</a>
+         </a></li>
+        <li><a href="images/link3.png"  data-imagelightbox="demo" data-ilb2-caption="In this project I found and incorporated a plugin connecting it to my pictures and captions. I made sure that this work was free to use."><img src="images/link3.png" alt="Fred Flinstone"/>
+        <a href="https://petyadeveloper.github.io/project-4/" target="_blank">This project made me sweat: first steps in javaScript and using a plugin</a>
+         </a></li>
+        <li><a href="images/link4.png"  data-imagelightbox="demo" data-ilb2-caption="I wrote the enire javaScript for this fun game: I found it very difficult to learn: but now I know, all it takes is practising."><img src="images/link4.png" alt="baby girl finstone happy"/>
+        <a href="https://petyadeveloper.github.io/project-7/" target="_blank">I can write the javaScript for this game in 20 min...but I had to repeat writing the code many times before that.</a>
+         </a></li>
+    <!--          <li><a href="https://petyadeveloper.github.io/project-5/" target="_blank">Built the styling with SASS</a></li>-->
+        <li><a href="images/owl.png"  data-imagelightbox="demo" data-ilb2-caption="I played a bit with the svg displayin this project: I love the special effects of that."><img src="images/owl.png" alt="a picture of a bird in black"/>
+        <a href="https://petyadeveloper.github.io/project-8/" target="_blank">SVG animation rocks.</a>
+         </a></li>      
+        <li><a href="images/bam-bam.jpg"  data-imagelightbox="demo" data-ilb2-caption="I wrote all the code in this project.I used javaScript, tables and a graph plugins. I wrote the HTML and the CSS, as well.I have learned a lot building this site."><img src="images/bam-bam.jpg" alt="drawing of Bam-bam"/>
+        <a href="https://petyadeveloper.github.io/project-9/" target="_blank">A dashboard with a lot of features.</a>
+         </a></li>
+        <li><a href="images/link10.jpg"  data-imagelightbox="demo" data-ilb2-caption="I wrote all the code in this project. I used ajax request to receive and display data from a remote server: it was not that difficult."><img src="images/link10.jpg" alt="Photo by Chris Leipelt on Unsplash"/>
+        <a href="https://petyadeveloper.github.io/project-10/" target="_blank"> A glipmse at the backend js side: it was not that difficult.</a>
+         </a></li>
+        <li><a href="images/link11.png"  data-imagelightbox="demo" data-ilb2-caption="In this project I used React.js to retrieve info from Flickr data after a search or from a link and display the results. React offers totally new concepts to use. I liked the efficiency of the single page app it supports."><img src="images/link11.png" alt="image of barny from flinstones"/>
+        <a href="https://github.com/PetyaDeveloper/project-11" target="_blank">My first project using React.js: Learning react was mind-bending. But I liked it.</a>
+         </a></li>
+       
+        </ul><!-- myUL -->
+    
+        </div> <!-- container -->
+        
+        <!--     ************** CONTACT-->
      
      <main class="flex" id="contact">
 <!--      <h2> Contact</h2> -->         
@@ -87,5 +118,50 @@
       <p class="copyright">Copyright 2017, Petya Katsarova</p>
     </footer>
     <script src="fun.js"></script>
-  </body>
-  </html>
+        
+    <script src="jquery-3.2.1.js"></script>
+    <script src="dist/imagelightbox.min.js"></script>    
+    <script>
+    $('a[data-imagelightbox="demo"]').imageLightbox({
+
+  selector:       'a[data-imagelightbox]',
+
+  id:             'imagelightbox',
+
+  allowedTypes:   'png|jpg|jpeg|gif',
+
+  animationSpeed: 250,
+
+  activity:       false,
+
+  arrows:         true,
+
+  button:         true,
+
+  caption:        true,
+
+  enableKeyboard: true,
+
+  lockBody:       false,
+
+  navigation:     false,
+
+  overlay:        true,
+
+  preloadNext:    true,
+
+  quitOnEnd:      false,
+
+  quitOnImgClick: false,
+
+  quitOnDocClick: true,
+
+  quitOnEscKey:   true
+
+});
+    
+    </script>                                       
+   <script src="main.js"></script>
+    </body>    
+</html>    
+    

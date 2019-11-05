@@ -1,9 +1,8 @@
-/* Global Layout Set-up */
-* {
-  box-sizing: border-box;
+*{
+box-sizing: border-box;
 }
-
 body {
+  text-align: center;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -11,6 +10,83 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
+a.imagelightbox-close {
+    background: lightgrey;
+}
+ #myUL {
+    /* Remove default list styling */
+    list-style-type: none;   
+    padding: 0;
+    margin: auto;
+}
+#myUL li{
+    width: 80%;
+    margin: 1% 10%;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px lightgrey;
+}
+
+#myUL li a {
+    text-decoration: none; /* Remove default text underline */
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #468847;
+    width: 100%;
+    margin: 0 3px;
+    width: 206px;
+    border-radius: 20px;
+}
+#myUL a:first-child{
+    overflow: hidden;
+}
+#myUL img{
+    width: 206px;
+    height: 206px;
+    border-radius: 20px;
+    transform: scale(1.05);
+    transition: transform 1.25s;
+}
+#myUL img:hover{
+    transform: scale(.90);
+}
+.imagelightbox-overlay {
+    background: #e6e6fa;
+    }
+#myUL a:last-child:hover{
+    color: #294429;
+    background: #ffffcc;
+    border-radius: 10px;
+/*    padding: 0 5px;*/
+    transition: 1s;
+}
+/***************** styling the js created div, ul and li els in the header ************************/
+#values div{
+/*    margin: 0 50px;*/
+    display: inline-block;
+}
+
+#values ul{
+  margin-top: 50px;
+  padding: 10px 50px;
+  background: lightgrey;
+  color: #008000;
+  box-shadow: 2px 2px 5px #008000;
+  border-radius: 20px;
+}
+
+
+/**************** styling the popup images in the plugin link *****************/
+#imagelightbox{
+   border-radius: 10px;
+   width: 400px;
+   height: 500px;
+    
+}
+
+/* Global Layout Set-up */
+
 h2,h3{
     text-align: center;
 }
@@ -38,6 +114,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 1000;
 }
 .main-nav ul li .selected {
   color: white;
@@ -156,35 +233,6 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
-/*STYLING THE EXPERIENCE LINKS*/
-
-#experience h2{
-    display: inline-block;
-}
-
-.experience a{
-  margin: 0 3px;
-}
-.experience a:hover{
-    color: #294429;
-    background: #b3cccc;
-    border-radius: 20px;
-    padding: 0 5px;
-    transition: 1s;
-}
-
-
-/*TRANSITIONS AND TRANSFORM FOR THE WEBSITE LINK in EXPERIENCE*/
-
-.website{
-    text-align: center;
-    transform: scale(1);
-}
-.website:hover{
-    transform: scale(1.3);
-    transition: all 1s;
-}
-
 
 /*************
 EXPERIENCE
@@ -200,18 +248,7 @@ EXPERIENCE
 p {
   font-weight: normal;
 }
-#experience {
-  list-style: none;
-  padding: 10px 0;
-  margin: 20px 0 0;
-  }
-#experience ul {
-  margin: 0 10px;
-   padding: 0;
- }
- #experience ul li {
- display: inline-block;
- }
+
 /*************
 CONTACT
 ****************/
@@ -246,34 +283,31 @@ CONTACT
     background: #ffffe6;
 }
 
-/*styling the #MY-PROJECTS DIV*/
-/*
-#my-projects{
-    background: orange;
-}
-*/
-#my-projects li{
-    width: 80%;
-    margin: 1% 10%;
-    padding: 2rem 4rem;
-    background: coral;
-    border-radius: 10px;
-}
-#my-projects img{
-    width: 80%;
-    height: 60%;
-    padding-bottom: 1rem;
-}
-#my-projects a{
-    display: inline-block;
-    width: 100%;
-}
 
 
 
-/********************************* Styles for larger screens *************************************/
-@media screen and (min-width: 720px) {
-  
+
+/************************
+MEDIA QUERY 768px
+*************************************/
+
+@media (min-width: 768px) {
+
+/*   ****************** MAKE THE LISTS WITH PROJECTS 2 ROWS LAYOUT*/
+    #myUL{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #myUL li {
+        margin: 5px 0;
+        padding: 20px 0 2px;
+        width: 40%;
+    }
+    
+/*    ***************** about me, contact and footer 2 columns layout ******************/
+      
    .card-contact{
        width: 35%;
        height: 220px;
@@ -301,8 +335,6 @@ CONTACT
   main p {
     line-height: 1.6em;
   }
-
-/*    ??????????????????????????/fixing in the center h2 headings*/
     
   footer {
     font-size: 1.3em;
@@ -311,16 +343,27 @@ CONTACT
   }
 }
 
+/******************************
+      MEDIA QUERY 1024px
+***********************************/
 
-
-
-
-
-
-
-
-/*fixing: text p below the picture in mobile,not halh on hte right and half under*/
-
+@media (min-width: 1024px) {
+  body{
+    background: #f2eee5;
+ }
+    
+  img {
+    padding: 20px;  
+ }
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*    3 rows layout for the list items with the projects*/
+    #myUL li{
+        width: 30%;
+    }
+}
 
 
 
