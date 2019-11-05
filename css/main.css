@@ -1,14 +1,6 @@
 *{
 box-sizing: border-box;
 }
-/*
-body {
-    text-align: center;
-    background: #e6ffff;
-    margin: 0 0 0 5%;       
-}
-*/
-
 body {
   text-align: center;
   margin: 0;
@@ -39,40 +31,48 @@ a.imagelightbox-close {
     width: 80%;
     margin: 1% 10%;
     padding: 2rem 4rem;
-/*    background: coral;*/
-    background: #eafbea;
     border-radius: 10px;
+    box-shadow: 5px 5px 7px lightgrey;
 }
 
 #myUL li a {
     text-decoration: none; /* Remove default text underline */
     display: inline-block;
     padding-bottom: 10px;
-/*    margin-left: -55px;*/
     color: #468847;
     width: 100%;
     margin: 0 3px;
+    width: 206px;
+    border-radius: 20px;
+}
+#myUL a:first-child{
+    overflow: hidden;
 }
 #myUL img{
     width: 206px;
     height: 206px;
-/*    padding-bottom: 1rem;*/
-    border-radius: 10px;
+    border-radius: 20px;
+    transform: scale(1.05);
+    transition: transform 1.25s;
+}
+#myUL img:hover{
+    transform: scale(.90);
 }
 .imagelightbox-overlay {
     background: #e6e6fa;
     }
-#myUL a:hover{
+#myUL a:last-child:hover{
     color: #294429;
-    background: #b3cccc;
-    border-radius: 20px;
-    padding: 0 5px;
+    background: #ffffcc;
+    border-radius: 10px;
+/*    padding: 0 5px;*/
     transition: 1s;
 }
 /**************** styling the popup images in the plugin link *****************/
 #imagelightbox{
-
    border-radius: 10px;
+   width: 400px;
+   height: 500px;
     
 }
 
@@ -105,6 +105,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 1000;
 }
 .main-nav ul li .selected {
   color: white;
